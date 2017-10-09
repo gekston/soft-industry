@@ -1,1 +1,9 @@
-@import 'sprite';
+html {
+  @import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,900');
+}
+
+@import './sprite';
+
+/*.app {
+  @include sprite($gold-stars-copy);
+}*/
