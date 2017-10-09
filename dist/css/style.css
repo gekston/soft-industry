@@ -1,2 +1,23 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,900");
+html {
+  font-family: 'Raleway', sans-serif; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+.wrapp {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto; }
+
+.head {
+  border-bottom: 1px solid red;
+  width: 100%;
+  display: block; }
+
+/*.app {
+  @include sprite($gold-stars-copy);
+}*/
 
 /*# sourceMappingURL=style.css.map */
