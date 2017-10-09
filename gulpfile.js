@@ -4,6 +4,7 @@ var gulp = require('gulp'),
     sourcemaps = require('gulp-sourcemaps'),
     autoprefixer = require('autoprefixer'),
     spritesmith = require('gulp.spritesmith'),
+    cssnano = require('gulp-cssnano'),
     lost = require('lost');
 
 var paths = {
@@ -29,6 +30,7 @@ gulp.task('styles', function() {
       lost(),
       autoprefixer()
     ]))
+    .pipe(cssnano())
     .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest(paths.cssDestination));
 });
