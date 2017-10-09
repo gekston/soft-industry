@@ -3,12 +3,22 @@ var gulp = require('gulp'),
     postcss = require('gulp-postcss'),
     sourcemaps = require('gulp-sourcemaps'),
     autoprefixer = require('autoprefixer'),
+    spritesmith = require('gulp.spritesmith'),
     lost = require('lost');
 
 var paths = {
   cssSource: 'source/style/',
   cssDestination: 'dist/css/'
 };
+
+gulp.task('sprite', function () {
+  var spriteData = gulp.src('./source/img/sprite/*.png').pipe(spritesmith({
+    imgName: 'sprite.png',
+    cssName: '_sprite.scss'
+  }));
+  spriteData.img.pipe(gulp.dest('./dist/image/')); // путь, куда сохраняем картинку
+  spriteData.css.pipe(gulp.dest('./source/style/')); // путь, куда сохраняем стили
+});
 
 gulp.task('styles', function() {
   return gulp.src(paths.cssSource + '**/*.scss')
