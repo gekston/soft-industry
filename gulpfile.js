@@ -14,7 +14,8 @@ var paths = {
 gulp.task('sprite', function () {
   var spriteData = gulp.src('./source/img/sprite/*.png').pipe(spritesmith({
     imgName: 'sprite.png',
-    cssName: '_sprite.scss'
+    cssName: '_sprite.scss',
+    imgPath: '../image/sprite.png'
   }));
   spriteData.img.pipe(gulp.dest('./dist/image/')); // путь, куда сохраняем картинку
   spriteData.css.pipe(gulp.dest('./source/style/')); // путь, куда сохраняем стили
