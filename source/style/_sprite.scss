@@ -64,6 +64,17 @@ $closet-icon-total-width: 85px;
 $closet-icon-total-height: 69px;
 $closet-icon-image: '../image/sprite.png';
 $closet-icon: (0px, 56px, 0px, -56px, 16px, 13px, 85px, 69px, '../image/sprite.png', 'closet-icon', );
+$drop-down-icon-grey-name: 'drop-down-icon-grey';
+$drop-down-icon-grey-x: 61px;
+$drop-down-icon-grey-y: 56px;
+$drop-down-icon-grey-offset-x: -61px;
+$drop-down-icon-grey-offset-y: -56px;
+$drop-down-icon-grey-width: 8px;
+$drop-down-icon-grey-height: 5px;
+$drop-down-icon-grey-total-width: 85px;
+$drop-down-icon-grey-total-height: 69px;
+$drop-down-icon-grey-image: '../image/sprite.png';
+$drop-down-icon-grey: (61px, 56px, -61px, -56px, 8px, 5px, 85px, 69px, '../image/sprite.png', 'drop-down-icon-grey', );
 $drop-down-icon-name: 'drop-down-icon';
 $drop-down-icon-x: 53px;
 $drop-down-icon-y: 56px;
@@ -155,7 +166,7 @@ $slider-shevron: (0px, 0px, 0px, 0px, 33px, 56px, 85px, 69px, '../image/sprite.p
 $spritesheet-width: 85px;
 $spritesheet-height: 69px;
 $spritesheet-image: '../image/sprite.png';
-$spritesheet-sprites: ($-icon-car, $acc-icon, $cart-icon, $chat-icon, $closet-icon, $drop-down-icon, $edit-icon, $gold-stars-copy, $heart-icon, $home, $login-icon, $search-icon-copy, $slider-shevron, );
+$spritesheet-sprites: ($-icon-car, $acc-icon, $cart-icon, $chat-icon, $closet-icon, $drop-down-icon-grey, $drop-down-icon, $edit-icon, $gold-stars-copy, $heart-icon, $home, $login-icon, $search-icon-copy, $slider-shevron, );
 $spritesheet: (85px, 69px, '../image/sprite.png', $spritesheet-sprites, );
 
 // The provided mixins are intended to be used with the array-like variables
