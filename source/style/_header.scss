@@ -138,7 +138,68 @@
       }
     }
   }
-  &__account {}
+  &__account {
+    font-size: 12px;
+    color: $head-font-color;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    &:hover {
+      .head__account-list {
+        display: block;
+      }
+      .head__account-current:after {
+        @include sprite($drop-down-icon);
+      }
+    }
+    &-current {
+      text-transform: capitalize;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      position: relative;
+      &:after,
+      &:before {
+        content: '';
+        display: inline-block;
+        margin: 0 5px;
+      }
+      &:before {
+        @include sprite($acc-icon);
+      }
+      &:after {
+        @include sprite($drop-down-icon-grey)
+      }
+      &:hover {
+
+      }
+      &__link {
+        text-decoration: none;
+        color: $head-font-color;
+      }
+    }
+    &-list {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: none;
+      -webkit-box-shadow: 0px -2px 15px 0px rgba(0, 0, 0, 0.22);
+      -moz-box-shadow: 0px -2px 15px 0px rgba(0, 0, 0, 0.22);
+      box-shadow: 0px -2px 15px 0px rgba(0, 0, 0, 0.22);
+      background-color: $white;
+      width: 100%;
+      position: absolute;
+      top: 95%;
+      &__item {
+        &:hover {
+          cursor: pointer;
+          background-color: $main-blue;
+          color: $white;
+        }
+      }
+    }
+  }
   &__wishlist {}
   &__login {}
   &__chat {}
