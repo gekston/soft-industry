@@ -1,0 +1,21 @@
+.icon {
+  &__flag {
+    display: inline-block;
+    margin: 0 10px;
+    &-eng {
+      @include sprite($english-flag-icon);
+    }
+    &-fr {
+      @include sprite($french-flag-icon);
+    }
+    &-ger {
+      @include sprite($geman-flag-icor);
+    }
+    &-arg {
+      @include sprite($argentina-flag-icon);
+    }
+    &-boli {
+      @include sprite($bolivia-flag-icon);
+    }
+  }
+}
