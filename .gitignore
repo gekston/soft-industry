@@ -58,3 +58,5 @@ typings/
 .env
 
 *.psd
+
+package-lock.json
