@@ -14,9 +14,12 @@
     height: 100%;
   }
   &__right {
-    lost-column: 5/12;
+    lost-offset: 7/12;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
   }
   &__currency {
     width: 45px;
@@ -240,6 +243,42 @@
       }
     }
   }
-  &__chat {}
-  &__call{}
+  &__chat {
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    &-link {
+      color: $head-font-color;
+      text-decoration: none;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      &::before {
+        @include sprite($chat-icon);
+        content: '';
+        display: inline-block;
+        margin: 0 10px;
+      }
+      &__bold {
+        font-weight: 800;
+        text-transform: uppercase;
+        margin: 0 5px;
+      }
+    }
+  }
+  &__call{
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    &::after {
+      //@include sprite($)
+    }
+    &-link {
+      text-decoration: none;
+      color: $head-font-color;
+      font-weight: 600;
+    }
+  }
 }
