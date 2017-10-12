@@ -172,13 +172,14 @@
       &:before {
         content: '';
         display: inline-block;
-        margin: 0 5px;
       }
       &:before {
         @include sprite($acc-icon);
+        margin: 0 5px 0 15px;
       }
       &:after {
-        @include sprite($drop-down-icon-grey)
+        @include sprite($drop-down-icon-grey);
+        margin: 0px 10px 0px 7px;
       }
       &__link {
         text-decoration: none;
@@ -214,6 +215,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding-right: 20px;
     &-link {
       text-decoration: none;
       color: $head-font-color;
@@ -221,6 +223,7 @@
         content: '';
         display: inline-block;
         @include sprite($heart-icon);
+        margin: 0 5px 0 0;
       }
     }
   }
@@ -245,6 +248,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin: 0 35px 0 0;
     &-link {
       color: $head-font-color;
       text-decoration: none;
@@ -273,11 +277,12 @@
       content: '';
       display: inline-block;
       @include sprite($call-icon);
+      margin: 0 10px 0 0;
     }
     &-link {
       text-decoration: none;
       color: $head-font-color;
-      font-weight: 600;
+      font-weight: 800;
     }
   }
 }
