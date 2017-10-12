@@ -208,8 +208,38 @@
       }
     }
   }
-  &__wishlist {}
-  &__login {}
+  &__wishlist {
+    text-transform: capitalize;
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    &-link {
+      text-decoration: none;
+      color: $head-font-color;
+      &::before {
+        content: '';
+        display: inline-block;
+        @include sprite($heart-icon);
+      }
+    }
+  }
+  &__login {
+    text-transform: capitalize;
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    &-link {
+      text-decoration: none;
+      color: $head-font-color;
+      &::before {
+        content: '';
+        display: inline-block;
+        @include sprite($login-icon);
+      }
+    }
+  }
   &__chat {}
   &__call{}
 }
