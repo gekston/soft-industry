@@ -150,8 +150,13 @@
       .head__account-list {
         display: block;
       }
-      .head__account-current:after {
-        @include sprite($drop-down-icon);
+      .head__account-current {
+        .head__account-current__link {
+          color: $main-blue;
+        }
+        &::after {
+          @include sprite($drop-down-icon);
+        }
       }
     }
     &-current {
@@ -193,6 +198,8 @@
       position: absolute;
       top: 95%;
       &__item {
+        padding: 5px 10px;
+        text-transform: capitalize;
         &:hover {
           cursor: pointer;
           background-color: $main-blue;
