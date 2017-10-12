@@ -28,6 +28,12 @@
       .head__currency-list {
         display: block;
       }
+      .head__currency-current {
+        color: $main-blue;
+        &::after {
+          @include sprite($drop-down-icon);
+        }
+      }
     }
     &-current {
       display: flex;
@@ -40,11 +46,6 @@
         display: inline-block;
         @include sprite($drop-down-icon-grey);
         margin: 0 5px 0 0;
-      }
-      &:hover {
-        &::after {
-          @include sprite($drop-down-icon);
-        }
       }
     }
     &-list{
