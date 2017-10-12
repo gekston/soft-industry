@@ -180,9 +180,6 @@
       &:after {
         @include sprite($drop-down-icon-grey)
       }
-      &:hover {
-
-      }
       &__link {
         text-decoration: none;
         color: $head-font-color;
@@ -272,8 +269,10 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    &::after {
-      //@include sprite($)
+    &::before {
+      content: '';
+      display: inline-block;
+      @include sprite($call-icon);
     }
     &-link {
       text-decoration: none;
