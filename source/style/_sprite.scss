@@ -9,17 +9,6 @@
 //
 // At the bottom of this section, we provide information about the spritesheet itself
 // $spritesheet: width height image $spritesheet-sprites;
-$-icon-car-name: 'Icon-car';
-$-icon-car-x: 38px;
-$-icon-car-y: 47px;
-$-icon-car-offset-x: -38px;
-$-icon-car-offset-y: -47px;
-$-icon-car-width: 30px;
-$-icon-car-height: 25px;
-$-icon-car-total-width: 191px;
-$-icon-car-total-height: 136px;
-$-icon-car-image: '../image/sprite.png';
-$-icon-car: (38px, 47px, -38px, -47px, 30px, 25px, 191px, 136px, '../image/sprite.png', 'Icon-car', );
 $acc-icon-name: 'acc-icon';
 $acc-icon-x: 180px;
 $acc-icon-y: 77px;
@@ -196,6 +185,17 @@ $home-total-width: 191px;
 $home-total-height: 136px;
 $home-image: '../image/sprite.png';
 $home: (101px, 47px, -101px, -47px, 22px, 18px, 191px, 136px, '../image/sprite.png', 'home', );
+$icon-car-name: 'icon-car';
+$icon-car-x: 38px;
+$icon-car-y: 47px;
+$icon-car-offset-x: -38px;
+$icon-car-offset-y: -47px;
+$icon-car-width: 30px;
+$icon-car-height: 25px;
+$icon-car-total-width: 191px;
+$icon-car-total-height: 136px;
+$icon-car-image: '../image/sprite.png';
+$icon-car: (38px, 47px, -38px, -47px, 30px, 25px, 191px, 136px, '../image/sprite.png', 'icon-car', );
 $login-icon-name: 'login-icon';
 $login-icon-x: 37px;
 $login-icon-y: 108px;
@@ -254,7 +254,7 @@ $slider-shevron: (0px, 47px, 0px, -47px, 33px, 56px, 191px, 136px, '../image/spr
 $spritesheet-width: 191px;
 $spritesheet-height: 136px;
 $spritesheet-image: '../image/sprite.png';
-$spritesheet-sprites: ($-icon-car, $acc-icon, $argentina-flag-icon, $bolivia-flag-icon, $call-icon, $cart-icon, $chat-icon, $closet-icon, $drop-down-icon-grey, $drop-down-icon, $edit-icon, $english-flag-icon, $french-flag-icon, $geman-flag-icor, $gold-stars-copy, $heart-icon, $home, $login-icon, $logo, $search-icon-copy, $search-icon, $slider-shevron, );
+$spritesheet-sprites: ($acc-icon, $argentina-flag-icon, $bolivia-flag-icon, $call-icon, $cart-icon, $chat-icon, $closet-icon, $drop-down-icon-grey, $drop-down-icon, $edit-icon, $english-flag-icon, $french-flag-icon, $geman-flag-icor, $gold-stars-copy, $heart-icon, $home, $icon-car, $login-icon, $logo, $search-icon-copy, $search-icon, $slider-shevron, );
 $spritesheet: (191px, 136px, '../image/sprite.png', $spritesheet-sprites, );
 
 // The provided mixins are intended to be used with the array-like variables
