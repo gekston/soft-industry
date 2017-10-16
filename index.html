@@ -49,19 +49,64 @@
       </div>
     </div>
   </header>
-  <div class="">
-    <a href="" class=""></a>
-    <form class="">
-      <input type="text" />
-      <button>search</button>
-    </form>
-    <div class="">
-      <img class="" src="" alt="" />
-      <div class="">
-        <span class="">everyday free shipping</span>
-        <span class="">&#38; no sales tax</span>
+  <div class="wrapp service">
+    <a href="" class="service__logo"></a>
+    <span class="service__form-wrapp">
+      <form class="service__form">
+        <input id="search" type="text" class="service__form-input" placeholder="Enter your keyword..." />
+        <button class="service__form-btn">search</button>
+      </form>
+    </span>
+    <div class="service__promo">
+      <span class="service__promo-img"></span>
+      <div class="service__promo-text">
+        <span class="service__promo-text__bold">everyday free shipping</span>
+        <span class="service__promo-text__normal">&#38; no sales tax</span>
       </div>
-      <div class=""></div>
+    </div>
+    <div class="service__cart">
+      <label for="cart__show" class="service__cart-label">
+        <span class="service__cart-img"></span>
+        <span class="service__cart-caption">my cart</span>
+        <span class="service__cart-item">1 item (s)</span>
+      </label>
+      <input type="checkbox" class="service__cart-check" id="cart__show">
+      <div class="service__cart-items">
+        <span class="service__cart-items__title">Recently Added Item(s):</span>
+        <ul class="service__cart-items__list">
+          <li class="service__cart-items__list-item">
+            <img src="./dist/image/product-img-copy.png" class="service__cart-items__list-item__img" alt="" />
+            <span class="service__cart-items__list-item__info">
+              <span class="service__cart-items__list-item__info-name">Gazenas mutre</span>
+              <span class="service__cart-items__list-item__info-rating">
+                <span class="rating__star-grey">
+                  <i class="rating__star-gold" style="width:20px"></i>
+                </span>
+                <span class="service__cart-items__list-item__info-rewiev">2 Review (s)</span>
+              </span>
+              <span class="service__cart-items__list-item__amount">
+                <span class="service__cart-items__list-item__amount-price">$65.00</span>
+                <span class="service__cart-items__list-item__amount-qty">
+                  <span class="service__cart-items__list-item__amount-qty__title">qty</span> 
+                  <input class="service__cart-items__list-item__amount-qty__value" type="text" value="1">
+                </span>
+              </span>
+            </span>
+            <span class="service__cart-items__list-item__control">
+                <i class="service__cart-items__list-item__control-edit"></i>
+                <i class="service__cart-items__list-item__control-remove"></i>
+              </span>
+          </li>
+        </ul>
+        <div class="service__cart-item__total">
+          <span>Cart subtotal:</span>
+          <span>$65</span>
+        </div>
+        <div class="service__cart-item__control">
+          <button class="service__cart-item__control-btn">view cart</button>
+          <button class="service__cart-item__control-btn">view cart</button>
+        </div>
+      </div>
     </div>
   </div>
   <nav class="navigation">
@@ -74,5 +119,9 @@
       <li>contact us</li>
     </ul>
   </nav>
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
 </body>
 </html>
