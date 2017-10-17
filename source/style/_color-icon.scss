@@ -1,0 +1,23 @@
+.color {
+  &__rect {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px 0 0;
+    display: inline-block;
+    &-brown {
+      background-color: $brown-color;
+    }
+    &-red {
+      background-color: $red-color;
+    }
+    &-green {
+      background-color: $green-color;
+    }
+    &-orange {
+      background-color: $orange-color;
+    }
+    &-blue {
+      background-color: $blue-color;
+    }
+  }
+}
