@@ -1,0 +1,81 @@
+.wrapp {
+  &-navigation {
+    background-color: $nav-bg-color;
+  }
+}
+.navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  &__home {
+    background-color: lighten($main-blue, 5%);
+    width: 70px;
+    height: 50px;
+    display: inline-block;
+    position: relative;
+    &::after {
+      content: '';
+      @include sprite($home);
+      display: inline-block;
+      position: relative;
+      top: 35%;
+      left: 35%;
+    }
+  }
+  &__category {
+    color: $white;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    font-size: 14px;
+    font-weight: 900;
+    text-transform: uppercase;
+    &-item {
+      margin: 0 17px;
+      position: relative;
+      &__hot::after,
+      &__new::after {
+        position: absolute;
+        font-size: 8px;
+        color: $white;
+        top: -13px;
+        right: -20px;
+        padding: 2px 4px;
+        border-radius: 6px;
+        text-align: center;
+      }
+      &__hot::after {
+        content: 'hot';
+        background-color: $hot-red;
+      }
+      &__new::after {
+        content: 'new';
+        background-color: $new-blue;
+      }
+    }
+  }
+  &__social {
+    list-style-type: none;
+    padding: 15px 24px;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    background-color: $social-bg-color;
+    &-item {
+      margin: 0 5px;
+      &__link {
+        text-decoration: none;
+        color: $social-icon-color;
+        &:hover {
+          color: $main-blue;
+        }
+      }
+    }
+  }
+}
