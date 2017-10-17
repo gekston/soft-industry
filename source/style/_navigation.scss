@@ -58,6 +58,10 @@
         content: 'new';
         background-color: $new-blue;
       }
+      &__link {
+        text-decoration: none;
+        color: inherit;
+      }
     }
   }
   &__social {
