@@ -1,5 +1,6 @@
 html {
   @import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,900');
+  @import url('https://fonts.googleapis.com/css?family=Lobster+Two:400,700i');
   font-family: 'Raleway', sans-serif;
 }
 body {
@@ -13,6 +14,9 @@ body {
 @import './var';
 @import './flag-icon';
 @import './header';
+@import './service';
+@import './navigation';
+
 /*.app {
   @include sprite($gold-stars-copy);
 }*/
