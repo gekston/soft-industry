@@ -315,11 +315,12 @@
 .rating__star {
   &-grey {
     @include sprite($gray-stars);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: center;
   }
   &-gold {
     @include sprite($gold-star);
-    display: inline-block;
-    position: relative;
-    top: -3px;
   }
 }
