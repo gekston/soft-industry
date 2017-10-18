@@ -5,6 +5,7 @@ var gulp = require('gulp'),
     autoprefixer = require('autoprefixer'),
     spritesmith = require('gulp.spritesmith'),
     cssnano = require('gulp-cssnano'),
+    imagemin = require('gulp-imagemin'),
     lost = require('lost');
 
 var paths = {
@@ -35,6 +36,12 @@ gulp.task('styles', function() {
     .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest(paths.cssDestination));
 });
+
+gulp.task('img-min', () =>
+gulp.src('./source/img/*.*')
+  .pipe(imagemin())
+  .pipe(gulp.dest('dist/image/'))
+);
 
 gulp.watch(paths.cssSource + '**/*.scss', ['styles']);
 
